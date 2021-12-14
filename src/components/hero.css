@@ -1,0 +1,60 @@
+.hero-container {
+  height: 120vh;
+  grid-column: 1/-1;
+  background-image: url(../images/hero.png);
+
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.sub-grid {
+}
+
+.hero-info {
+  grid-column: 1/-1;
+  gap: 1rem;
+  padding: 1rem;
+}
+.hero-container h1 {
+  font-size: 46px;
+  line-height: 57px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.hero-container p {
+  color: var(--color-grey);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-container a {
+  color: var(--color-grey);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+.hero-container button {
+  display: block;
+  padding: 12px 61px;
+  background-color: transparent;
+  color: var(--color-white);
+  border-radius: 8px;
+  border: 2px solid var(--color-white);
+  margin-block-end: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-info {
+    grid-column: 5/-1;
+  }
+  .hero-container {
+    height: calc(100vh - 86px);
+    display: flex;
+    align-items: center;
+    display: grid;
+  }
+}
